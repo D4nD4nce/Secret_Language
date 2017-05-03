@@ -43,6 +43,7 @@ public abstract class Code implements All_codes {
         }
     }
     //
+    @Override
     public void setInfo()
     {
         System.out.println("Write your text");
@@ -57,10 +58,13 @@ public abstract class Code implements All_codes {
         }
     }
     //
+    @Override
     public abstract void setInfoHelper(String str);
     //
+    @Override
     public abstract void setKey();
     //
+    @Override
     public abstract void getResult();
     //
     private static boolean code_decode()
