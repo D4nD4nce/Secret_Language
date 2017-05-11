@@ -8,7 +8,7 @@ import com.myownsecretproject.secretlanguage.codes.All_codes;
 public class Simple_code extends Simple implements All_codes {
 
     @Override
-    public void setInfoHelper(String str) {
+    public void setLanguage() {
         LangWrapper wrapIn = new LangWrapper(true, 1);
         //
         try {
@@ -20,7 +20,7 @@ public class Simple_code extends Simple implements All_codes {
         this.singleLanguage = Language.setLanguage(languageManager.getWrapIn().getLstLang().get(0));
     }
 
-    protected void makeCode()
+    private void makeCode()
     {
         char c = infoHelper.getCurrentSymbol();
         //

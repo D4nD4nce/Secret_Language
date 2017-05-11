@@ -13,7 +13,7 @@ public abstract class Caesar extends Code implements All_codes {
     protected int key;
 
     @Override
-    public abstract void setInfoHelper(String str);
+    public abstract void setLanguage();
 
     public int getKey() {
         return key;

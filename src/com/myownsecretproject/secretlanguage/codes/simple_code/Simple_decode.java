@@ -8,7 +8,7 @@ import com.myownsecretproject.secretlanguage.codes.All_codes;
 public class Simple_decode extends Simple implements All_codes {
 
     @Override
-    public void setInfoHelper(String str) {
+    public void setLanguage() {
         LangWrapper wrapIn = new LangWrapper(true, 1);
         //
         try {

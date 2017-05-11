@@ -19,7 +19,7 @@ public abstract class Simple extends Code implements All_codes {
     }
 
     @Override
-    public abstract void setInfoHelper(String str);
+    public abstract void setLanguage();
 
     public List<SymbolH> getKey() {
         return lstKey;

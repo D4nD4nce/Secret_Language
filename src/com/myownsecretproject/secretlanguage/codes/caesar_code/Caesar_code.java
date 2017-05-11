@@ -11,7 +11,7 @@ public class Caesar_code extends Caesar implements All_codes {
     {}
 
     @Override
-    public void setInfoHelper(String str)
+    public void setLanguage()
     {
         LangWrapper wrapIn = new LangWrapper(true, 1);
         //

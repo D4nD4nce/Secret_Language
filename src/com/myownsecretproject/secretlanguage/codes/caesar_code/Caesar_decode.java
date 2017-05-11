@@ -6,12 +6,12 @@ import com.myownsecretproject.secretlanguage.alphabets.languages.Language;
 
 public class Caesar_decode extends Caesar {
 
-
     public Caesar_decode()
     {}
 
     @Override
-    public void setInfoHelper(String str) {
+    public void setLanguage()
+    {
         LangWrapper wrapIn = new LangWrapper(true, 1);
         //
         try {
@@ -24,9 +24,10 @@ public class Caesar_decode extends Caesar {
     }
 
     @Override
-    protected int getIndex(int i) {
+    protected int getIndex(int i)
+    {
         int size = currentLanguage.getSize();
-        return (i - key) <= 0 ? (i - key + size) : (i - key);
+        return (i - key) < 0 ? (i - key + size) : (i - key);
     }
 
     @Override

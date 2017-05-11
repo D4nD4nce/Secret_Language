@@ -46,20 +46,21 @@ public abstract class Code implements All_codes {
     @Override
     public void setInfo()
     {
+        setLanguage();
         System.out.println("Write your text");
         Scanner input = new Scanner(System.in);
         String str;
 
         if (input.hasNextLine() && !(str = input.nextLine()).isEmpty())
         {
-            setInfoHelper(str);
+            infoHelper = new InfoH(str);
         } else {
             setInfo();
         }
     }
     //
     @Override
-    public abstract void setInfoHelper(String str);
+    public abstract void setLanguage();
     //
     @Override
     public abstract void setKey();
