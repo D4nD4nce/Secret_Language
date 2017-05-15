@@ -57,12 +57,13 @@ public class Simple_code extends Simple implements All_codes {
         }
         //
         str.append(coding(b));
+        str.append(" ");
         return str.toString();
     }
 
     private char coding(int n)
     {
-        return lstKey.get(n).getSymbol();
+        return mapKey_indexNumber.get(n);
     }
 
     @Override

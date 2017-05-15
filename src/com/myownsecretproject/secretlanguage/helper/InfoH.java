@@ -42,6 +42,11 @@ public class InfoH {
         return currentSymbol.getSymbol();
     }
 
+    public int getCurrnetPosition()
+    {
+        return currentSymbol.getPosition();
+    }
+
     public void setCurrentSymbol(char c)
     {
         SymbolH s = new SymbolH(c, lstOut.size());
