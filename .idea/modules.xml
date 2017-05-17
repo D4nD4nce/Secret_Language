@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Secret_Language.iml" filepath="$PROJECT_DIR$/Secret_Language.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SecretLang+GUI.iml" filepath="$PROJECT_DIR$/SecretLang+GUI.iml" />
     </modules>
   </component>
 </project>
