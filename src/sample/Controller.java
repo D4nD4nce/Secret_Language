@@ -3,23 +3,26 @@ package sample;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.fxml.Initializable;
+import javafx.geometry.Orientation;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 
-public class Controller {
-    public Label helloWorld;
-    public ListView<String> list;
-    public ListView<String> listCheck;
+import java.net.URL;
+import java.util.ResourceBundle;
+
+public class Controller implements Initializable
+{
+    @FXML public Button testBut;
+    @FXML public Label helloWorld;
+    @FXML public ListView<String> list;
 
     public Controller()
     {
 
-        ObservableList<String> items = FXCollections.observableArrayList (
-                "Single", "Double", "Suite", "Family App");
-        //listCheck.setItems(items);
-        listCheck = new ListView<>(items);
-        listCheck.setPrefWidth(100);
-        listCheck.setPrefHeight(70);
     }
 
     public void sayHelloWorld(ActionEvent actionEvent)
@@ -27,13 +30,10 @@ public class Controller {
         helloWorld.setText("Hello World!");
     }
 
-    public void initializeList()
-    {
-        list = new ListView<>();
+    @Override
+    public void initialize(URL location, ResourceBundle resources) {
         ObservableList<String> items = FXCollections.observableArrayList (
                 "Single", "Double", "Suite", "Family App");
         list.setItems(items);
-        list.setPrefWidth(100);
-        list.setPrefHeight(70);
     }
 }
