@@ -1,15 +1,19 @@
-package sample;
+/*
+ *
+ * 1. Set kind of code
+ * 2. Set input/output langugages
+ * 3. Set input text
+ * 4. Set key
+ *
+ */
+
+package com.myguisecretproject.secretlang.main;
 
 import javafx.application.Application;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ListView;
-import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
-
 
 public class Main extends Application {
 
@@ -21,11 +25,9 @@ public class Main extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception
     {
-        Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("../resources/main_win.fxml"));
         primaryStage.setTitle("First_frame");
-        primaryStage.setScene(new Scene(root, 300, 275));
+        primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
-
-
 }
