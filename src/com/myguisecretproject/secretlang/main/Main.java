@@ -5,7 +5,18 @@
  * 3. Set input text
  * 4. Set key
  *
+ *
+ * unique:
+ * 1. code class
+ * 2. key
+ * 3. fxml for key
+ * 4. controller for fxml
+ * 5. enum
+ *
  */
+
+
+
 
 package com.myguisecretproject.secretlang.main;
 

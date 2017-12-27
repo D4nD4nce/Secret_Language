@@ -10,6 +10,8 @@
 package com.myguisecretproject.secretlang.main;
 
 import com.myguisecretproject.secretlang.codes.AllCodesEnum;
+import com.myguisecretproject.secretlang.codes.Code;
+import com.myguisecretproject.secretlang.helper.Code_Fabric;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -29,7 +31,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class MainController implements Initializable
+public class Main_Controller implements Initializable
 {
     @FXML public Button testBut;
     //@FXML public Button setKey_button;
@@ -39,35 +41,10 @@ public class MainController implements Initializable
     @FXML public ListView<String> lang_to;
     //public ComboBox checkList;
 
-    public MainController()
+    public Main_Controller()
     {
 
     }
-
-    public void sayHelloWorld(MouseEvent actionEvent)
-    {
-        String str = list_codes.getSelectionModel().getSelectedItem();
-        label_test_1.setText(str);
-    }
-
-    public void openSetKeyWindow(ActionEvent act)
-    {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("../resources/set_Caesar_key.fxml"));
-            Scene scene = new Scene(fxmlLoader.load());
-
-            Stage stage = new Stage();
-            stage.setTitle("New Window");
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setScene(scene);
-
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
 
     // main for checkbox for setting kind of code. others panels depend on it
     @Override
@@ -115,4 +92,35 @@ public class MainController implements Initializable
 //        });
     }
 
+    public void sayHelloWorld(MouseEvent actionEvent)
+    {
+        String str = list_codes.getSelectionModel().getSelectedItem();
+        label_test_1.setText(str);
+    }
+
+    @FXML
+    public boolean openSetKeyWindow(ActionEvent act)
+    {
+        Code makeCode = new Code_Fabric(AllCodesEnum.CAESAR_CODE, true).getCode();
+
+
+
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource("../resources/set_Caesar_key.fxml"));
+            Scene scene = new Scene(fxmlLoader.load());
+
+            Stage stage = new Stage();
+            stage.setTitle("set key");
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
+
+            stage.showAndWait();
+            return true;
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        //
+        return false;
+    }
 }

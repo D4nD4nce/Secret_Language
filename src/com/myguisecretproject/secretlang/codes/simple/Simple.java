@@ -1,8 +1,8 @@
-package com.myguisecretproject.secretlang.codes.caesar;
+package com.myguisecretproject.secretlang.codes.simple;
 
 import com.myguisecretproject.secretlang.codes.Code;
 
-public class Ceasar extends Code
+public abstract class Simple extends Code
 {
     @Override
     public void setLanguage() {
@@ -18,7 +18,6 @@ public class Ceasar extends Code
     public void getResult() {
 
     }
-
 
     @Override
     public void getCodeName() {

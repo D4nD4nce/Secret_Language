@@ -7,7 +7,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<VBox alignment="CENTER" blendMode="DIFFERENCE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="500.0" opacity="1.0" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.myguisecretproject.secretlang.main.MainController">
+<VBox alignment="CENTER" blendMode="DIFFERENCE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="500.0" opacity="1.0" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.myguisecretproject.secretlang.main.Main_Controller">
   <children>
     <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Select code" textAlignment="CENTER" textOverrun="ELLIPSIS" VBox.vgrow="NEVER">
       <labelFor>
