@@ -5,6 +5,7 @@ import java.util.List;
 
 public enum AllCodesEnum
 {
+
     CAESAR_CODE, SIMPLE_CODE, EXAMPLE_CODE;
 
     public static void getCodesList(List<String> codesList)
@@ -14,4 +15,8 @@ public enum AllCodesEnum
             codesList.add(AllCodesEnum.values()[i].name());
         }
     }
+
+
+
+
 }

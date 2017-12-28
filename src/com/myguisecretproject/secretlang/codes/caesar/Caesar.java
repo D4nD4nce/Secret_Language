@@ -38,11 +38,11 @@ public abstract class Caesar extends Code
     }
 
     @Override
-    public void setKey(Stage dialogStage, FXMLLoader loader)
+    public boolean setKey(Stage dialogStage, FXMLLoader loader)
     {
         Caesar_controller controller = loader.getController();
         controller.setDialogStage(dialogStage);
         dialogStage.showAndWait();
-        //return code;
+        return controller.isKeySettled();
     }
 }

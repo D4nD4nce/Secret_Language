@@ -49,10 +49,21 @@
     <Separator blendMode="DARKEN" prefWidth="200.0" />
     <TextArea prefWidth="200.0" promptText="Input text to code" wrapText="true" VBox.vgrow="ALWAYS" />
     <Separator prefWidth="200.0" />
-    <HBox fx:id="Set_key" alignment="CENTER_LEFT" disable="false" fillHeight="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" VBox.vgrow="NEVER">
+    <HBox fx:id="Set_key" alignment="CENTER_RIGHT" disable="false" fillHeight="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="-1.0" prefWidth="200.0" VBox.vgrow="NEVER">
       <children>
-        <Button mnemonicParsing="false" onAction="#openSetKeyWindow" text="Set_key" />
-        <Label text="not_setted" />
+        <VBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="100.0" HBox.hgrow="ALWAYS">
+          <children>
+            <RadioButton fx:id="radioBut_toCode" mnemonicParsing="false" text="To code" />
+            <RadioButton fx:id="radioBut_toDecode" mnemonicParsing="false" text="To decode" />
+          </children>
+        </VBox>
+        <Separator maxHeight="-Infinity" orientation="VERTICAL" prefHeight="-1.0" HBox.hgrow="ALWAYS" />
+        <HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="200.0" HBox.hgrow="ALWAYS">
+          <children>
+            <Button fx:id="setKey_button" mnemonicParsing="false" onAction="#openSetKeyWindow" text="Set_key" textAlignment="LEFT" />
+            <CheckBox fx:id="checkBox_isOkKey" alignment="CENTER_LEFT" allowIndeterminate="false" blendMode="DARKEN" disable="true" focusTraversable="false" indeterminate="false" mnemonicParsing="false" opacity="0.68" selected="false" text="is Key settled" wrapText="false" />
+          </children>
+        </HBox>
       </children>
     </HBox>
     <Separator prefWidth="200.0" />

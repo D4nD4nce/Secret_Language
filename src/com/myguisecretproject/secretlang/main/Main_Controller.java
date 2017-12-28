@@ -18,7 +18,6 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.scene.input.MouseEvent;
@@ -34,17 +33,20 @@ import java.util.ResourceBundle;
 public class Main_Controller implements Initializable
 {
     @FXML public Button testBut;
-    //@FXML public Button setKey_button;
+    @FXML public Button setKey_button;
     @FXML public Label label_test_1;
+    @FXML public CheckBox checkBox_isOkKey;
     @FXML public ListView<String> list_codes;
     @FXML public ListView<String> lang_from;
     @FXML public ListView<String> lang_to;
+    @FXML public  RadioButton radioBut_toCode;
+    @FXML public  RadioButton radioBut_toDecode;
+
+    private boolean answer = false;
     //public ComboBox checkList;
 
     public Main_Controller()
-    {
-
-    }
+    {}
 
     // main for checkbox for setting kind of code. others panels depend on it
     @Override
@@ -56,14 +58,60 @@ public class Main_Controller implements Initializable
         ObservableList<String> items = FXCollections.observableArrayList (codesList);
         list_codes.setItems(items);
 
+        updateKeyCheckbox();
+
+        ToggleGroup butGroup = new ToggleGroup();
+        radioBut_toCode.setToggleGroup(butGroup);
+        radioBut_toCode.setSelected(true);
+        radioBut_toDecode.setToggleGroup(butGroup);
+    }
+
+    @FXML
+    public void sayHelloWorld(MouseEvent actionEvent)
+    {
+        String str = list_codes.getSelectionModel().getSelectedItem();
+        label_test_1.setText(str);
+    }
+
+    @FXML
+    public void openSetKeyWindow(ActionEvent act)
+    {
+        Code makeCode = new Code_Fabric(AllCodesEnum.CAESAR_CODE, true).getCode();
+        //
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader();
+            fxmlLoader.setLocation(getClass().getResource(makeCode.getResPath()));
+            Scene scene = new Scene(fxmlLoader.load());
+
+            Stage stage = new Stage();
+            stage.setTitle("set key");
+            stage.initModality(Modality.APPLICATION_MODAL);
+            stage.setScene(scene);
+
+            answer = makeCode.setKey(stage, fxmlLoader);
+            updateKeyCheckbox();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void updateKeyCheckbox()
+    {
+        checkBox_isOkKey.setSelected(answer);
+    }
+}
+
+
+
+// initialize
 
 //        HashMap<String,Integer> myMap = new HashMap<>();
 //        myMap.put("var", 1);
 //        myMap.put("this", 2);
 //        myMap.put("check", 3);
-        //ObservableList<HashMap> items1 = FXCollections.observableArrayList(myMap);
-        //checkList.setItems(items);
-        //checkList.getItems().setAll(items1);
+//ObservableList<HashMap> items1 = FXCollections.observableArrayList(myMap);
+//checkList.setItems(items);
+//checkList.getItems().setAll(items1);
 
 //        checkList.setCellFactory(new Callback<ListView<Color>, ListCell<Color>>()
 //        {
@@ -90,37 +138,3 @@ public class Main_Controller implements Initializable
 //                };
 //            }
 //        });
-    }
-
-    public void sayHelloWorld(MouseEvent actionEvent)
-    {
-        String str = list_codes.getSelectionModel().getSelectedItem();
-        label_test_1.setText(str);
-    }
-
-    @FXML
-    public boolean openSetKeyWindow(ActionEvent act)
-    {
-        Code makeCode = new Code_Fabric(AllCodesEnum.CAESAR_CODE, true).getCode();
-
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource(makeCode.getResPath()));
-            Scene scene = new Scene(fxmlLoader.load());
-
-            Stage stage = new Stage();
-            stage.setTitle("set key");
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setScene(scene);
-
-            makeCode.setKey(stage, fxmlLoader);
-
-            //stage.showAndWait();
-            return true;
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        //
-        return false;
-    }
-}

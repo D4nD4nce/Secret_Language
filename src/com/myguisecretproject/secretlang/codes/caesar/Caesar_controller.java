@@ -8,8 +8,8 @@ import java.util.ResourceBundle;
 
 public class Caesar_controller implements Initializable
 {
-
     private Stage dialogStage;
+    private boolean isOkay = false;
 
     @Override
     public void initialize(URL location, ResourceBundle resources)
@@ -17,7 +17,13 @@ public class Caesar_controller implements Initializable
 
     }
 
-    public void setDialogStage(Stage dialogStage) {
+    public void setDialogStage(Stage dialogStage)
+    {
         this.dialogStage = dialogStage;
+    }
+
+    public boolean isKeySettled()
+    {
+        return isOkay;
     }
 }

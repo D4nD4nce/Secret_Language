@@ -35,7 +35,7 @@ public abstract class Code
     //
     public abstract String getResPath();
     //
-    public abstract void setKey(Stage dialogStage, FXMLLoader loader);
+    public abstract boolean setKey(Stage dialogStage, FXMLLoader loader);
 
 
 //    //

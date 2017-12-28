@@ -32,11 +32,11 @@ public abstract class Simple extends Code
     }
 
     @Override
-    public void setKey(Stage dialogStage, FXMLLoader loader) {
+    public boolean setKey(Stage dialogStage, FXMLLoader loader) {
 
         Simple_controller controller = loader.getController();
         controller.setDialogStage(dialogStage);
         dialogStage.showAndWait();
-        //return code;
+        return controller.isKeySettled();
     }
 }
