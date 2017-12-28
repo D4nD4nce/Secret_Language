@@ -42,8 +42,11 @@ public class Main_Controller implements Initializable
     @FXML public ListView<String> lang_to;
     @FXML public  RadioButton radioBut_toCode;
     @FXML public  RadioButton radioBut_toDecode;
+    @FXML public  TextArea code_description;
 
     private boolean answer = false;
+    List<String> lst_names;
+    List<String> lst_descriptions;
     //public ComboBox checkList;
 
     public Main_Controller()
@@ -53,8 +56,8 @@ public class Main_Controller implements Initializable
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
-        List<String> lst_names = new ArrayList<>();
-        List<String> lst_descriptions = new ArrayList<>();
+        lst_names = new ArrayList<>();
+        lst_descriptions = new ArrayList<>();
 
         //HashMap<String,Integer> mapCode_names = new HashMap<>();
         //HashMap<String,Integer> mapCode_descriptions = new HashMap<>();
@@ -78,6 +81,8 @@ public class Main_Controller implements Initializable
         list_codes.setItems(items_codeValues);
 
         updateKeyCheckbox();
+        updateTextArea();
+
         ToggleGroup butGroup = new ToggleGroup();
         radioBut_toCode.setToggleGroup(butGroup);
         radioBut_toCode.setSelected(true);
@@ -89,6 +94,7 @@ public class Main_Controller implements Initializable
     {
         String str = list_codes.getSelectionModel().getSelectedItem();
         label_test_1.setText(str);
+        updateTextArea();
     }
 
     @FXML
@@ -116,6 +122,15 @@ public class Main_Controller implements Initializable
     private void updateKeyCheckbox()
     {
         checkBox_isOkKey.setSelected(answer);
+    }
+
+    private void updateTextArea()
+    {
+        int pos = list_codes.getSelectionModel().getSelectedIndex();
+        //
+        if ((pos < 0) || pos >= AllCodesEnum.values().length) return;
+        //
+        code_description.setText(lst_descriptions.get(pos));
     }
 }
 

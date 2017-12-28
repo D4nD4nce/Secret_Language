@@ -9,12 +9,21 @@
 
 <VBox alignment="CENTER" blendMode="DIFFERENCE" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minWidth="500.0" opacity="1.0" prefHeight="-1.0" prefWidth="-1.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.myguisecretproject.secretlang.main.Main_Controller">
   <children>
-    <Label alignment="CENTER" maxWidth="1.7976931348623157E308" text="Select code" textAlignment="CENTER" textOverrun="ELLIPSIS" VBox.vgrow="NEVER">
-      <labelFor>
-        <ListView fx:id="list_codes" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" onMouseClicked="#sayHelloWorld" prefHeight="100.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-      </labelFor>
-    </Label>
-    <fx:reference source="list_codes" />
+    <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="100.0" VBox.vgrow="ALWAYS">
+      <children>
+        <Label alignment="CENTER_LEFT" maxWidth="1.7976931348623157E308" text="Select code" textAlignment="CENTER" textOverrun="ELLIPSIS" VBox.vgrow="NEVER">
+          <labelFor>
+            <ListView fx:id="list_codes" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" onMouseClicked="#sayHelloWorld" prefHeight="100.0" prefWidth="200.0" HBox.hgrow="ALWAYS" />
+          </labelFor>
+        </Label>
+        <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="-1.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+          <children>
+            <fx:reference source="list_codes" />
+            <TextArea fx:id="code_description" editable="false" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" prefHeight="100.0" prefWidth="200.0" wrapText="true" HBox.hgrow="NEVER" />
+          </children>
+        </HBox>
+      </children>
+    </VBox>
     <Separator blendMode="DARKEN" cache="true" cacheHint="SCALE" depthTest="INHERIT" prefWidth="200.0" />
     <VBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="200.0" prefWidth="100.0" VBox.vgrow="NEVER">
       <children>
