@@ -27,6 +27,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 import java.util.ResourceBundle;
 
@@ -52,14 +53,31 @@ public class Main_Controller implements Initializable
     @Override
     public void initialize(URL location, ResourceBundle resources)
     {
-        List<String> codesList = new ArrayList<>();
-        AllCodesEnum.getCodesList(codesList);
+        List<String> lst_names = new ArrayList<>();
+        List<String> lst_descriptions = new ArrayList<>();
 
-        ObservableList<String> items = FXCollections.observableArrayList (codesList);
-        list_codes.setItems(items);
+        //HashMap<String,Integer> mapCode_names = new HashMap<>();
+        //HashMap<String,Integer> mapCode_descriptions = new HashMap<>();
+        int enumCount = AllCodesEnum.values().length;
+        //
+        for (int b = 0; b < enumCount; ++b)
+        {
+            AllCodesEnum enumCode = AllCodesEnum.values()[b];
+            lst_names.add(AllCodesEnum.getCodeValue(AllCodesEnum.flag_codeName, enumCode));
+            //mapCode_names.put(AllCodesEnum.getCodeValue(AllCodesEnum.flag_codeName, enumCode), enumCode.ordinal());
+        }
+        //
+        for (int v = 0; v < enumCount; ++v)
+        {
+            AllCodesEnum enumCode = AllCodesEnum.values()[v];
+            lst_descriptions.add(AllCodesEnum.getCodeValue(AllCodesEnum.flag_codeDescription, enumCode));
+            //mapCode_descriptions.put(AllCodesEnum.getCodeValue(AllCodesEnum.flag_codeDescription, enumCode), enumCode.ordinal());
+        }
+        //
+        ObservableList<String> items_codeValues = FXCollections.observableArrayList (lst_names);
+        list_codes.setItems(items_codeValues);
 
         updateKeyCheckbox();
-
         ToggleGroup butGroup = new ToggleGroup();
         radioBut_toCode.setToggleGroup(butGroup);
         radioBut_toCode.setSelected(true);
@@ -109,9 +127,9 @@ public class Main_Controller implements Initializable
 //        myMap.put("var", 1);
 //        myMap.put("this", 2);
 //        myMap.put("check", 3);
-//ObservableList<HashMap> items1 = FXCollections.observableArrayList(myMap);
-//checkList.setItems(items);
-//checkList.getItems().setAll(items1);
+//          ObservableList<HashMap> items1 = FXCollections.observableArrayList(myMap);
+//          checkList.setItems(items);
+//          checkList.getItems().setAll(items1);
 
 //        checkList.setCellFactory(new Callback<ListView<Color>, ListCell<Color>>()
 //        {
