@@ -1,6 +1,8 @@
 package com.myguisecretproject.secretlang.codes;
 
 import com.myguisecretproject.secretlang.helper.InfoH;
+import javafx.fxml.FXMLLoader;
+import javafx.stage.Stage;
 
 public abstract class Code
 {
@@ -25,13 +27,16 @@ public abstract class Code
     //
     public abstract void setLanguage();
     //
-    public abstract void setKey();
-    //
     public abstract void getResult();
-
+    //
     public abstract void getCodeName();
-
+    //
     public abstract void getCodeDescription();
+    //
+    public abstract String getResPath();
+    //
+    public abstract void setKey(Stage dialogStage, FXMLLoader loader);
+
 
 //    //
 //    private static boolean code_decode()

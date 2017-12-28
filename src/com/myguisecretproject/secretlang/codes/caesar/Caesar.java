@@ -13,33 +13,14 @@ public abstract class Caesar extends Code
     private String resPath = "../resources/set_Caesar_key.fxml";
 
     @Override
-    public abstract void setLanguage();
+    public void setLanguage() {
 
-    @Override
-    public void setKey()
-    {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource(resPath));
-            Scene scene = new Scene(fxmlLoader.load());
-
-            Stage stage = new Stage();
-            stage.setTitle("set key");
-            stage.initModality(Modality.APPLICATION_MODAL);
-            stage.setScene(scene);
-
-            stage.showAndWait();
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
     }
 
     @Override
     public void getResult() {
 
     }
-
 
     @Override
     public void getCodeName() {
@@ -49,5 +30,19 @@ public abstract class Caesar extends Code
     @Override
     public void getCodeDescription() {
 
+    }
+
+    @Override
+    public String getResPath() {
+        return resPath;
+    }
+
+    @Override
+    public void setKey(Stage dialogStage, FXMLLoader loader)
+    {
+        Caesar_controller controller = loader.getController();
+        controller.setDialogStage(dialogStage);
+        dialogStage.showAndWait();
+        //return code;
     }
 }

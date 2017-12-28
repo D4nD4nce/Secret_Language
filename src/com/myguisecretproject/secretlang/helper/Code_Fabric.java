@@ -39,10 +39,10 @@ public class Code_Fabric
                 case CAESAR_CODE:
                     code = new Caesar_decode();
                     break;
-                case EXAMPLE_CODE:
+                case SIMPLE_CODE:
                     code = new Simple_decode();
                     break;
-                case SIMPLE_CODE:
+                case EXAMPLE_CODE:
                     break;
             }
         }

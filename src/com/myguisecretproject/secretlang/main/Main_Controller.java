@@ -103,11 +103,9 @@ public class Main_Controller implements Initializable
     {
         Code makeCode = new Code_Fabric(AllCodesEnum.CAESAR_CODE, true).getCode();
 
-
-
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource("../resources/set_Caesar_key.fxml"));
+            fxmlLoader.setLocation(getClass().getResource(makeCode.getResPath()));
             Scene scene = new Scene(fxmlLoader.load());
 
             Stage stage = new Stage();
@@ -115,7 +113,9 @@ public class Main_Controller implements Initializable
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(scene);
 
-            stage.showAndWait();
+            makeCode.setKey(stage, fxmlLoader);
+
+            //stage.showAndWait();
             return true;
         } catch (IOException e) {
             e.printStackTrace();
