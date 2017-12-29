@@ -1,5 +1,6 @@
 package com.myguisecretproject.secretlang.codes.caesar;
 
+import com.myguisecretproject.secretlang.alphabets.Language;
 import com.myguisecretproject.secretlang.codes.Code;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -10,7 +11,16 @@ import java.io.IOException;
 
 public abstract class Caesar extends Code
 {
-    private String resPath = "../resources/set_Caesar_key.fxml";
+    private final String resPath =
+            "../resources/set_Caesar_key.fxml";
+    //
+    private final String code_description =
+            "Код, который якобы был придуман и использовался еще самим Юлием Цезарем: при переводе текста символы попарно меняются местами";
+    //
+    private final boolean singleLanguage = true;
+    //
+    protected Language currentLanguage;
+    protected int key;
 
     @Override
     public void setLanguage() {
@@ -23,13 +33,8 @@ public abstract class Caesar extends Code
     }
 
     @Override
-    public void getCodeName() {
-
-    }
-
-    @Override
-    public void getCodeDescription() {
-
+    public String getCodeDescription() {
+        return code_description;
     }
 
     @Override

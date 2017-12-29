@@ -29,9 +29,7 @@ public abstract class Code
     //
     public abstract void getResult();
     //
-    public abstract void getCodeName();
-    //
-    public abstract void getCodeDescription();
+    public abstract String getCodeDescription();
     //
     public abstract String getResPath();
     //
