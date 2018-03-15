@@ -2,17 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_code.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_controller.java" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_decode.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/SetKey_Controller.java" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/AllCodesEnum.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/AllCodesEnum.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/Code.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/Code.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java" />
-      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/resources/main_win.fxml" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/resources/main_win.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/AllLanguagesEnum.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/alphabets/AllLanguagesEnum.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/English.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/alphabets/English.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/Language.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/alphabets/Language.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/Russian.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/alphabets/Russian.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/AllCodesEnum.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/AllCodesEnum.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/Code.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/Code.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar_code.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar_code.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar_controller.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar_controller.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar_decode.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar_decode.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/example/Example.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_code.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/example/Example_code.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_controller.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/example/Example_controller.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_decode.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/example/Example_decode.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple_code.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple_code.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple_controller.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple_controller.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple_decode.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple_decode.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/helper/Code_Fabric.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/helper/Code_Fabric.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/helper/InfoH.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/helper/InfoH.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/helper/SymbolH.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/helper/SymbolH.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/resources/main_win.fxml" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/resources/main_win.fxml" />
+      <change beforePath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/resources/set_Caesar_key.fxml" afterPath="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/resources/set_key.fxml" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -70,83 +86,108 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example.java">
+      <file leaf-file-name="Simple.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+            <state relative-caret-position="272">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Simple.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple.java">
+      <file leaf-file-name="Simple_code.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple_code.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="163">
-              <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+            <state relative-caret-position="51">
+              <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Caesar.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#893#894#0" expanded="true" />
-                <element signature="e#932#933#0" expanded="true" />
-                <element signature="e#980#981#0" expanded="true" />
-                <element signature="e#1010#1011#0" expanded="true" />
+                <element signature="e#1451#1452#0" expanded="true" />
+                <element signature="e#1488#1489#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Main_Controller.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding>
-                <element signature="e#0#7572#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-                <element signature="e#5449#5450#0" expanded="true" />
-                <element signature="e#5505#5506#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Code.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/Code.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="197">
-              <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
-              <folding>
+                <element signature="e#0#8051#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Caesar.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar.java">
+      <file leaf-file-name="Simple_controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple_controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="22" column="22" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#921#922#0" expanded="true" />
-                <element signature="e#960#961#0" expanded="true" />
-                <element signature="e#1008#1009#0" expanded="true" />
-                <element signature="e#1038#1039#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AllCodesEnum.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/AllCodesEnum.java">
+      <file leaf-file-name="Simple_decode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple_decode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="452">
-              <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Caesar_code.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar_code.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="51">
+              <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Caesar_decode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar_decode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Caesar_controller.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar_controller.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Example.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/example/Example.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -193,8 +234,6 @@
         <option value="$PROJECT_DIR$/src/alphabets/Russian.java" />
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/Russian.java" />
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/English.java" />
-        <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/AllLanguagesEnum.java" />
-        <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/Language.java" />
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/helper/InfoH.java" />
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/couples_turn/CouplesTurn.java" />
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/sample/sample.fxml" />
@@ -218,9 +257,13 @@
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_controller.java" />
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/Code.java" />
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar.java" />
-        <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple.java" />
+        <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/Language.java" />
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/AllCodesEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/AllLanguagesEnum.java" />
+        <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple.java" />
         <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/Main_Controller.java" />
+        <option value="$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/SetKey_Controller.java" />
       </list>
     </option>
   </component>
@@ -249,7 +292,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -273,13 +315,14 @@
               <item name="SecretLang+GUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="secretlang" type="462c0819:PsiDirectoryNode" />
-              <item name="alphabets" type="462c0819:PsiDirectoryNode" />
+              <item name="langs_logic" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SecretLang+GUI" type="b2602c69:ProjectViewProjectNode" />
               <item name="SecretLang+GUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="secretlang" type="462c0819:PsiDirectoryNode" />
+              <item name="langs_logic" type="462c0819:PsiDirectoryNode" />
               <item name="codes" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -287,6 +330,7 @@
               <item name="SecretLang+GUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="secretlang" type="462c0819:PsiDirectoryNode" />
+              <item name="langs_logic" type="462c0819:PsiDirectoryNode" />
               <item name="codes" type="462c0819:PsiDirectoryNode" />
               <item name="caesar" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -295,6 +339,7 @@
               <item name="SecretLang+GUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="secretlang" type="462c0819:PsiDirectoryNode" />
+              <item name="langs_logic" type="462c0819:PsiDirectoryNode" />
               <item name="codes" type="462c0819:PsiDirectoryNode" />
               <item name="example" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -303,6 +348,7 @@
               <item name="SecretLang+GUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="secretlang" type="462c0819:PsiDirectoryNode" />
+              <item name="langs_logic" type="462c0819:PsiDirectoryNode" />
               <item name="codes" type="462c0819:PsiDirectoryNode" />
               <item name="simple" type="462c0819:PsiDirectoryNode" />
             </path>
@@ -311,6 +357,7 @@
               <item name="SecretLang+GUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="secretlang" type="462c0819:PsiDirectoryNode" />
+              <item name="langs_logic" type="462c0819:PsiDirectoryNode" />
               <item name="helper" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -325,15 +372,32 @@
               <item name="SecretLang+GUI" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="secretlang" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SecretLang+GUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecretLang+GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="secretlang" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SecretLang+GUI" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SecretLang+GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="secretlang" type="462c0819:PsiDirectoryNode" />
+              <item name="ui" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -352,6 +416,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\All_projects\Java\SecretLang+GUI\src\com\myguisecretproject\secretlang\ui\resources" />
       <recent name="D:\All_projects\Java\SecretLang+GUI\src\com\myguisecretproject\secretlang\resources" />
       <recent name="D:\All_projects\Java\SecretLang+GUI\src\com\myguisecretproject\secretlang\codes\resources" />
     </key>
@@ -380,7 +445,7 @@
     <configuration name="Main" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
-          <option name="PATTERN" value="com.myguisecretproject.secretlang.main.*" />
+          <option name="PATTERN" value="com.myguisecretproject.secretlang.ui.controllers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -734,7 +799,14 @@
       <option name="project" value="LOCAL" />
       <updated>1514460431505</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="* Example code changes&#10;* Settled changes, depending on chosen Code in the Main win">
+      <created>1514540954522</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1514540954522</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
@@ -751,22 +823,20 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3279483" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17397882" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20121029" sideWeight="0.6703755" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -783,11 +853,38 @@
       <window_info id="Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32956383" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -803,11 +900,12 @@
     <MESSAGE value="* checkBox and button groups" />
     <MESSAGE value="* new names and descriptions for codes" />
     <MESSAGE value="* working UI description" />
-    <option name="LAST_COMMIT_MESSAGE" value="* working UI description" />
+    <MESSAGE value="* Example code changes&#10;* Settled changes, depending on chosen Code in the Main win" />
+    <option name="LAST_COMMIT_MESSAGE" value="* Example code changes&#10;* Settled changes, depending on chosen Code in the Main win" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="5" />
+      <option name="time" value="6" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -816,26 +914,13 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#833#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7572#0" expanded="true" />
+            <element signature="e#0#8051#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#5449#5450#0" expanded="true" />
-            <element signature="e#5505#5506#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -845,22 +930,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#833#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="25" lean-forward="true" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
           <folding>
-            <element signature="e#0#7572#0" expanded="true" />
+            <element signature="e#0#8051#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#5449#5450#0" expanded="true" />
-            <element signature="e#5505#5506#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -870,23 +949,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#833#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/sample/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="12" column="0" lean-forward="true" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7572#0" expanded="true" />
+            <element signature="e#0#8051#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#5449#5450#0" expanded="true" />
-            <element signature="e#5505#5506#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -895,23 +968,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#833#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/sample/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7572#0" expanded="true" />
+            <element signature="e#0#8051#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#5449#5450#0" expanded="true" />
-            <element signature="e#5505#5506#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -920,23 +987,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#833#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/sample/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="36" lean-forward="false" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding>
-            <element signature="e#0#7572#0" expanded="true" />
+            <element signature="e#0#8051#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#5449#5450#0" expanded="true" />
-            <element signature="e#5505#5506#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -945,22 +1006,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#833#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="20" column="36" lean-forward="true" selection-start-line="20" selection-start-column="36" selection-end-line="20" selection-end-column="36" />
           <folding>
-            <element signature="e#0#7572#0" expanded="true" />
+            <element signature="e#0#8051#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#5449#5450#0" expanded="true" />
-            <element signature="e#5505#5506#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -970,23 +1025,17 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#833#0" expanded="false" />
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/sample/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
           <folding>
-            <element signature="e#0#7572#0" expanded="true" />
+            <element signature="e#0#8051#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#5449#5450#0" expanded="true" />
-            <element signature="e#5505#5506#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1019,132 +1068,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/Russian.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/English.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/sample/sample.fxml" />
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/helper/InfoH.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-199">
-          <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/helper/SymbolH.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/helper/SymbolH.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/resources/main_win.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/alphabets/Language.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="901">
-          <caret line="53" column="54" lean-forward="false" selection-start-line="53" selection-start-column="54" selection-end-line="53" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="391">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple_decode.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/alphabets/English.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple_code.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/alphabets/Russian.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="459">
+          <caret line="27" column="0" lean-forward="true" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/alphabets/AllLanguagesEnum.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+        <state relative-caret-position="153">
+          <caret line="9" column="31" lean-forward="false" selection-start-line="9" selection-start-column="31" selection-end-line="9" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/AllCodesEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="23" column="6" lean-forward="false" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
           <folding>
-            <element signature="e#0#833#0" expanded="false" />
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple_controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/helper/InfoH.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="35" lean-forward="false" selection-start-line="11" selection-start-column="35" selection-end-line="11" selection-end-column="35" />
+        <state relative-caret-position="-1139">
+          <caret line="13" column="0" lean-forward="false" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
-            <element signature="e#449#450#0" expanded="false" />
-            <element signature="e#495#496#0" expanded="false" />
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#565#566#0" expanded="false" />
+            <element signature="e#1049#1050#0" expanded="false" />
+            <element signature="e#1097#1098#0" expanded="false" />
+            <element signature="e#1140#1141#0" expanded="false" />
+            <element signature="e#1190#1191#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar_controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#449#450#0" expanded="false" />
-            <element signature="e#495#496#0" expanded="false" />
-            <element signature="e#536#537#0" expanded="false" />
-            <element signature="e#565#566#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/resources/set_Caesar_key.fxml">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/resources/set_key.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder">
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/AllLanguagesEnum.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/Code.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="384">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/helper/Code_Fabric.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="false" />
-            <element signature="e#1506#1507#0" expanded="false" />
-            <element signature="e#1533#1534#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_code.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/example/Example_code.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="25" lean-forward="false" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
@@ -1152,7 +1155,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_decode.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/example/Example_decode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="27" lean-forward="false" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
@@ -1160,33 +1163,87 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example_controller.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/helper/Code_Fabric.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="646">
+          <caret line="43" column="0" lean-forward="false" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/resources/main_win.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
-          <caret line="8" column="1" lean-forward="false" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+          <caret line="8" column="0" lean-forward="true" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/example/Example_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/SetKey_Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="0" lean-forward="true" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/example/Example.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding>
+            <element signature="e#499#500#0" expanded="false" />
+            <element signature="e#527#528#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/example/Example.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
-          <caret line="2" column="20" lean-forward="false" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/alphabets/Language.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+        <state relative-caret-position="272">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar_decode.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple_code.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/simple/Simple_decode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
@@ -1194,7 +1251,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar_code.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar_code.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
           <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
@@ -1202,63 +1259,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/Code.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar_decode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="29" column="37" lean-forward="false" selection-start-line="29" selection-start-column="37" selection-end-line="29" selection-end-column="37" />
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar_controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/langs_logic/codes/caesar/Caesar.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1451#1452#0" expanded="true" />
+            <element signature="e#1488#1489#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/caesar/Caesar.java">
+    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/ui/controllers/Main_Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="22" column="22" lean-forward="true" selection-start-line="21" selection-start-column="4" selection-end-line="22" selection-end-column="22" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
+            <element signature="e#0#8051#0" expanded="true" />
             <element signature="imports" expanded="true" />
-            <element signature="e#921#922#0" expanded="true" />
-            <element signature="e#960#961#0" expanded="true" />
-            <element signature="e#1008#1009#0" expanded="true" />
-            <element signature="e#1038#1039#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/simple/Simple.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="20" column="0" lean-forward="true" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#893#894#0" expanded="true" />
-            <element signature="e#932#933#0" expanded="true" />
-            <element signature="e#980#981#0" expanded="true" />
-            <element signature="e#1010#1011#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/codes/AllCodesEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="45" column="10" lean-forward="true" selection-start-line="45" selection-start-column="10" selection-end-line="45" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/myguisecretproject/secretlang/main/Main_Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="175" column="0" lean-forward="true" selection-start-line="175" selection-start-column="0" selection-end-line="175" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#7572#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-            <element signature="e#5449#5450#0" expanded="true" />
-            <element signature="e#5505#5506#0" expanded="true" />
           </folding>
         </state>
       </provider>
