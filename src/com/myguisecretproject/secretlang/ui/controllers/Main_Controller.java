@@ -30,11 +30,12 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.ResourceBundle;
 
-public class Main_Controller implements Initializable
-{
+public class Main_Controller implements Initializable {
+
     @FXML public Button testBut;
     @FXML public Button setKey_button;
     @FXML public Label label_test_1;
@@ -57,62 +58,40 @@ public class Main_Controller implements Initializable
     private boolean bKeyAnswer = false;
     private boolean singleLang = false;
 
+    private List<AllCodesEnum> allCodesEnum;
+    private List<String> codesNames;
+    private List<String> languages;
     private Code currentCode;
     //public ComboBox checkList;
 
-    // конструктор
-    public Main_Controller()
-    {}
-
     // main for checkbox for setting kind of code. others panels depend on it
     @Override
-    public void initialize(URL location, ResourceBundle resources)
-    {
-        // лист с названиями шифров для GUI
-        List<String> lst_names = new ArrayList<>();
-        // лист названий доступных языков
-        List<String> lst_Langs = new ArrayList<>();
-
-        // цикл по количеству шифров для внесения корректных названий в лист имен
-        for (int b = 0; b < AllCodesEnum.values().length; ++b)
-        {
-            // получение enum по порядковому номеру.
-            AllCodesEnum enumCode = AllCodesEnum.values()[b];
-            // добавление целевой строки с имененем шифра в лист для GUI
-            lst_names.add(AllCodesEnum.getCodeValue(enumCode));
+    public void initialize(URL location, ResourceBundle resources) {
+        codesNames = new ArrayList<>();
+        languages = AllLanguagesEnum.getLanguages();
+        allCodesEnum = Arrays.asList(AllCodesEnum.values());
+        for (AllCodesEnum enumCode : AllCodesEnum.values()) {
+            codesNames.add(enumCode.getCodeName());
         }
-        //
-        // добавление коллекции имен шифров в элемент GUI
-        ObservableList<String> items_codeValues = FXCollections.observableArrayList (lst_names);
+        ObservableList<String> items_codeValues = FXCollections.observableArrayList(codesNames);            // set codes names
         list_codes.setItems(items_codeValues);
-
-        // добавление в GUI доступных языков
-        AllLanguagesEnum.getLangsList(lst_Langs);
-        items_codeValues = FXCollections.observableArrayList(lst_Langs);
+        items_codeValues = FXCollections.observableArrayList(languages);                                    // set all languages
         lang_from.setItems(items_codeValues);
-
-        // обновление чекбокса, показывающего, задан ключ для шифра или нет.
-        updateKeyCheckbox();
-        // обновление панели с текстом описания выбранного шифра
-        updateTextArea();
-        // чекбокс выбора одного-двух языков объявляется выбранным и неактивным (функция пока не доступна)
-        checkBox_singleLang.setSelected(true);
+        updateKeyCheckbox();                                                                                // обновление чекбокса, показывающего, задан ключ для шифра или нет.
+        updateTextArea();                                                                                   // обновление панели с текстом описания выбранного шифра
+        checkBox_singleLang.setSelected(true);                                                              // чекбокс выбора одного-двух языков объявляется выбранным и неактивным (функция пока не доступна)
         checkBox_singleLang.setDisable(true);
         updateLangs();
-
-        // создание группы радиобаттонов, в которой выбрать можно только элемент
-        ToggleGroup butGroup = new ToggleGroup();
+        ToggleGroup butGroup = new ToggleGroup();                                                           // создание группы радиобаттонов, в которой выбрать можно только один элемент
         radioBut_toCode.setToggleGroup(butGroup);
         radioBut_toCode.setSelected(true);
         radioBut_toDecode.setToggleGroup(butGroup);
-
         disableAllFields(true);
     }
 
     // реакция на выбор текущего шифра
     @FXML
-    public void code_chosen(MouseEvent actionEvent)
-    {
+    public void code_chosen(MouseEvent actionEvent) {
         // получение строки с именем текущего класса // debug
         String str = list_codes.getSelectionModel().getSelectedItem();
         label_test_1.setText(str);
@@ -138,10 +117,7 @@ public class Main_Controller implements Initializable
 
     // нажатие кнопки Set key
     @FXML
-    public void openSetKeyWindow(ActionEvent act)
-    {
-
-        //
+    public void openSetKeyWindow(ActionEvent act) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource(currentCode.getResPath()));
@@ -161,35 +137,30 @@ public class Main_Controller implements Initializable
 
     // выбор чекбокса single/multiple languages
     @FXML
-    public void cBoxSingleLang(ActionEvent act)
-    {
+    public void cBoxSingleLang(ActionEvent act) {
 //        singleLang = checkBox_singleLang.isSelected();
 //        updateLangs();
     }
 
     // апдейт чекбокса (ключ задан, не задан)
-    private void updateKeyCheckbox()
-    {
+    private void updateKeyCheckbox() {
         checkBox_isOkKey.setSelected(bKeyAnswer);
     }
 
     // апдейт текста (поле с описанием выбранного шифра)
-    private void updateTextArea()
-    {
+    private void updateTextArea() {
         if (currentCode != null)
             code_description.setText(currentCode.getCodeDescription());
     }
 
     // апдейт чекбокса выбора языков
-    private void updateLangs()
-    {
+    private void updateLangs() {
         checkBox_singleLang.setSelected(singleLang);
         lang_to.setDisable(singleLang);
     }
 
     // изменение активности ряда полей (объявляются неактивными до тех пор, пока не будет выбран один из шифров)
-    private void disableAllFields(boolean bFlag)
-    {
+    private void disableAllFields(boolean bFlag) {
         languages_box.setDisable(bFlag);
         inputText_area.setDisable(bFlag);
         setKey_box.setDisable(bFlag);

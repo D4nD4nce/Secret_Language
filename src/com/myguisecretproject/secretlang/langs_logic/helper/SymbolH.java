@@ -23,6 +23,7 @@ public class SymbolH
         return position;
     }
 
+    // private method, position can't be changed after creating object
     private void setPosition(int position) {
         this.position = position;
     }

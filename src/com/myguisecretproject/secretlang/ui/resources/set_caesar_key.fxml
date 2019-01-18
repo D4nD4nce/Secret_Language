@@ -6,7 +6,7 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.myguisecretproject.secretlang.langs_logic.codes.caesar.Caesar_controller">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="com.myguisecretproject.secretlang.ui.controllers.Caesar_controller">
   <children>
     <Button layoutX="104.0" layoutY="121.0" mnemonicParsing="false" text="Button" />
     <Button layoutX="187.0" layoutY="148.0" mnemonicParsing="false" text="Button" />

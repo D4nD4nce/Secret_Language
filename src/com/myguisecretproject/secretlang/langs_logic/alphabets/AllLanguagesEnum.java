@@ -1,18 +1,18 @@
 package com.myguisecretproject.secretlang.langs_logic.alphabets;
 
+import java.util.ArrayList;
 import java.util.List;
 
-public enum AllLanguagesEnum
-{
+public enum AllLanguagesEnum {
     RUSSIAN,
     ENGLISH;
 
-    public static void getLangsList(List<String> codesList)
-    {
-        for (int i = 0; i < AllLanguagesEnum.values().length; ++i)
-        {
-            codesList.add(AllLanguagesEnum.values()[i].name());
+    public static List<String> getLanguages() {
+        List<String> languages = new ArrayList<>();
+        for (AllLanguagesEnum lang : AllLanguagesEnum.values()) {
+            languages.add(lang.name());
         }
+        return languages;
     }
 
 
@@ -20,7 +20,7 @@ public enum AllLanguagesEnum
 //    {
 //        System.out.println("1. Russian");
 //        System.out.println("2. English");
-//        System.out.println("Choose language (print number):");
+//        System.out.println("Choose mainLanguage (print number):");
 //        Scanner input = new Scanner(System.in);
 //        int chosenNumber;
 //        //

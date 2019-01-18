@@ -3,8 +3,7 @@ package com.myguisecretproject.secretlang.langs_logic.helper;
 import java.util.LinkedList;
 import java.util.List;
 
-public class InfoH
-{
+public class InfoH {
     // original input String
     private String inputString;
 
@@ -16,123 +15,96 @@ public class InfoH
     private SymbolH currentSymbol;
 
     // changeable constructor with flags generally for decoding
-    public InfoH(String string)
-    {
+    public InfoH(String string) {
         this.inputString = string;
-        //this.masWords = string.split(" ");
         this.lstIn = new LinkedList<>();
         this.lstOut = new LinkedList<>();
-        //
         this.currentSymbol = initialize(string.toCharArray(), lstIn);
     }
 
-    private SymbolH initialize (char[] masLetters, List<SymbolH> lst)
-    {
-        for (int i = 0; i < masLetters.length; i++)
-        {
+    private SymbolH initialize (char[] masLetters, List<SymbolH> lst) {
+        for (int i = 0; i < masLetters.length; i++) {
             SymbolH s = new SymbolH(masLetters[i], i);
             lst.add(i, s);
         }
-        //
         return lst.get(0);
     }
 
-    public char getCurrentSymbol()
-    {
+    public char getCurrentSymbol() {
         return currentSymbol.getSymbol();
     }
 
-    public int getCurrnetPosition()
-    {
+    public int getCurrnetPosition() {
         return currentSymbol.getPosition();
     }
 
-    public void setCurrentSymbol(char c)
-    {
+    public void setCurrentSymbol(char c) {
         SymbolH s = new SymbolH(c, lstOut.size());
         lstOut.add(s);
     }
 
-    public void setCurrentSymbol(String str)
-    {
+    public void setCurrentSymbol(String str) {
         char[] mass = str.toCharArray();
-        //
-        for(int i = 0; i < mass.length; i++)
-        {
-            SymbolH s = new SymbolH(mass[i], lstOut.size());
+        for (char symbol : mass) {
+            SymbolH s = new SymbolH(symbol, lstOut.size());
             lstOut.add(s);
         }
     }
 
-    public boolean nextLetter()
-    {
-        if (isLast(currentSymbol, lstIn))
+    public boolean nextLetter() {
+        if (isLast(currentSymbol, lstIn)) {
             return false;
-        //
+        }
         int i = currentSymbol.getPosition() + 1;
         this.currentSymbol = lstIn.get(i);
         return true;
     }
 
-    public boolean previousLetter()
-    {
-        if (isFirst(currentSymbol, lstIn))
+    public boolean previousLetter() {
+        if (isFirst(currentSymbol, lstIn)) {
             return false;
-        //
+        }
         int i = currentSymbol.getPosition() - 1;
         this.currentSymbol = lstIn.get(i);
         return true;
     }
 
-    public int getInSize()
-    {
+    public int getInSize() {
         return lstIn.size();
     }
 
-    public int getOutSize()
-    {
+    public int getOutSize() {
         return lstOut.size();
     }
 
-    private boolean isFirst(SymbolH s, List<SymbolH> lst)
-    {
+    private boolean isFirst(SymbolH s, List<SymbolH> lst) {
         try {
-            //
             if (lst.indexOf(s) != s.getPosition())
                 throw new Exception("Error: InfoHelper: index doesn't match the list (isFirst)");
             //
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //
         return s.getPosition() == 0;
     }
 
-    public boolean isLast(SymbolH s, List<SymbolH> lst)
-    {
+    private boolean isLast(SymbolH s, List<SymbolH> lst) {
         try {
-            //
             if (lst.indexOf(s) != s.getPosition())
                 throw new Exception("Error: InfoHelper: index doesn't match the list (isLast)");
             //
         } catch (Exception e) {
             e.printStackTrace();
         }
-        //
         return s.getPosition() == lst.size() - 1;
     }
 
-    public String getResult()
-    {
+    public String getResult() {
         String result = "Your text: " + inputString + "\n" + "Result: ";
         StringBuilder stringBuilder = new StringBuilder();
-        //
-        for (int i = 0; i < lstOut.size(); i++)
-        {
-            SymbolH resultSymbol = lstOut.get(i);
+        for (SymbolH resultSymbol : lstOut) {
             stringBuilder.append(resultSymbol.getSymbol());
         }
-        //
         return result + stringBuilder.toString();
     }
 }

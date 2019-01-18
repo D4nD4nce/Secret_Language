@@ -1,4 +1,4 @@
-package com.myguisecretproject.secretlang.langs_logic.codes.example;
+package com.myguisecretproject.secretlang.ui.controllers;
 
 import javafx.fxml.Initializable;
 

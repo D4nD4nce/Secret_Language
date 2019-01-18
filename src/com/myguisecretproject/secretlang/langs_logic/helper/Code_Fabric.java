@@ -7,17 +7,14 @@ import com.myguisecretproject.secretlang.langs_logic.codes.caesar.Caesar_decode;
 import com.myguisecretproject.secretlang.langs_logic.codes.simple.Simple_code;
 import com.myguisecretproject.secretlang.langs_logic.codes.simple.Simple_decode;
 
-public class Code_Fabric
-{
+public class Code_Fabric {
+
     private Code code;
     //private Map<Integer, Code> codeMap;
 
-    public Code_Fabric(AllCodesEnum c, boolean decode)
-    {
-        if (decode)
-        {
-            switch (c)
-            {
+    public Code_Fabric(AllCodesEnum c, boolean decode) {
+        if (decode) {
+            switch (c) {
                 case CAESAR_CODE:
                     code = new Caesar_code();
                     break;
@@ -28,8 +25,7 @@ public class Code_Fabric
                     break;
             }
         } else {
-            switch (c)
-            {
+            switch (c) {
                 case CAESAR_CODE:
                     code = new Caesar_decode();
                     break;
@@ -42,8 +38,7 @@ public class Code_Fabric
         }
     }
 
-    public Code getCode()
-    {
+    public Code getCode() {
         return code;
     }
 }

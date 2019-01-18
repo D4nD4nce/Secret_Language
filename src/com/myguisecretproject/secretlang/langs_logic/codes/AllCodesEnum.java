@@ -3,39 +3,43 @@ package com.myguisecretproject.secretlang.langs_logic.codes;
 import com.myguisecretproject.secretlang.langs_logic.codes.caesar.Caesar;
 import com.myguisecretproject.secretlang.langs_logic.codes.simple.Simple;
 
+import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
-public enum AllCodesEnum
-{
-    CAESAR_CODE,
-    SIMPLE_CODE,
-    EXAMPLE_CODE;
+public enum AllCodesEnum {
+    CAESAR_CODE     (AllCodesInfo.caesar_name, AllCodesInfo.caesar_description, AllCodesInfo.caesar_key_path),
+    SIMPLE_CODE     (AllCodesInfo.simple_name, AllCodesInfo.simple_description, AllCodesInfo.simple_key_path),
+    EXAMPLE_CODE    (AllCodesInfo.example_name, AllCodesInfo.example_description, AllCodesInfo.example_key_path);
 
-    public static void getCodesList(List<String> codesList)
-    {
-        for (int i = 0; i < AllCodesEnum.values().length; ++i)
-        {
+    private String codeName;
+    private String codeDescription;
+    private String resPath;
+
+    AllCodesEnum (String codeName, String codeDescription, String resPath) {
+        this.codeName = codeName;
+        this.codeDescription = codeDescription;
+        this.resPath = resPath;
+    }
+
+    public String getCodeName() {
+        return codeName;
+    }
+
+    public String getCodeDescription() {
+        return codeDescription;
+    }
+
+    public String getResPath() {
+        return resPath;
+    }
+
+    public static List<String> getEnumsList() {
+        List<String> codesList = new ArrayList<>();
+        for (int i = 0; i < AllCodesEnum.values().length; ++i) {
             codesList.add(AllCodesEnum.values()[i].name());
         }
-    }
-    //
-    private static final String Example_code_name =
-            "Тестовый шифр";
-    private static final String Example_code_description =
-            "Тестовое описание. Данная позиция используется для наполнения и отладки программы";
-    //
-    public static String getCodeValue(AllCodesEnum enumCode)
-    {
-        switch (enumCode)
-        {
-            case CAESAR_CODE:
-                return Caesar.code_name;
-            case SIMPLE_CODE:
-                return Simple.code_name;
-            case EXAMPLE_CODE:
-                return AllCodesEnum.Example_code_name;
-        }
-        //
-        return null;
+        return codesList;
     }
 }

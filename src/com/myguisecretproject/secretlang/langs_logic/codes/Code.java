@@ -1,40 +1,25 @@
 package com.myguisecretproject.secretlang.langs_logic.codes;
 
+import com.myguisecretproject.secretlang.langs_logic.alphabets.Language;
 import com.myguisecretproject.secretlang.langs_logic.helper.InfoH;
 import javafx.fxml.FXMLLoader;
 import javafx.stage.Stage;
 
 public abstract class Code
 {
+    protected Language mainLanguage;
     protected InfoH infoHelper;
 
-//    @Override
-//    public void setInfo()
-//    {
-//        setLanguage();
-//        System.out.println("Write your text");
-//        Scanner input = new Scanner(System.in);
-//        String str;
-//
-//        if (input.hasNextLine() && !(str = input.nextLine()).isEmpty())
-//        {
-//            infoHelper = new InfoH(str);
-//        } else {
-//            setInfo();
-//        }
-//    }
+    public Code (Language mainLanguage) {
+        this.mainLanguage = mainLanguage;
+    }
 
-    //
-    public abstract void setLanguage();
-    //
+    public abstract void setAdditionalInfo(boolean encode, CodeAddings addings);
+
+    public abstract void setKey(KeyConstructor key);
+
     public abstract void getResult();
-    //
-    public abstract String getCodeDescription();
-    //
-    public abstract String getResPath();
-    //
-    public abstract boolean setKey(Stage dialogStage, FXMLLoader loader);
-    //
+
     public abstract boolean isSingleLang();
 
 

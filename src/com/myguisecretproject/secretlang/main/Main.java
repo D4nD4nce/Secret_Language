@@ -1,3 +1,12 @@
+package com.myguisecretproject.secretlang.main;
+
+import com.myguisecretproject.secretlang.langs_logic.codes.AllCodesInfo;
+import javafx.application.Application;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.stage.Stage;
+
 /*
  *
  * 1. Set kind of code
@@ -15,29 +24,16 @@
  *
  */
 
-
-
-
-package com.myguisecretproject.secretlang.main;
-
-import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
-
 public class Main extends Application {
 
-    public static void main(String[] args)
-    {
+    public static void main(String[] args) {
         launch(args);
     }
 
     @Override
-    public void start(Stage primaryStage) throws Exception
-    {
-        Parent root = FXMLLoader.load(getClass().getResource("../ui/resources/main_win.fxml"));
-        primaryStage.setTitle("First_frame");
+    public void start(Stage primaryStage) throws Exception {
+        Parent root = FXMLLoader.load(getClass().getResource(AllCodesInfo.main_win_path));
+        primaryStage.setTitle("General frame");
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
     }
