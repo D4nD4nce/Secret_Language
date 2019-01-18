@@ -120,7 +120,7 @@ public class Main_Controller implements Initializable {
     public void openSetKeyWindow(ActionEvent act) {
         try {
             FXMLLoader fxmlLoader = new FXMLLoader();
-            fxmlLoader.setLocation(getClass().getResource(currentCode.getResPath()));
+            //fxmlLoader.setLocation(getClass().getResource(currentCode.getResPath()));
             Scene scene = new Scene(fxmlLoader.load());
 
             Stage stage = new Stage();
@@ -128,7 +128,7 @@ public class Main_Controller implements Initializable {
             stage.initModality(Modality.APPLICATION_MODAL);
             stage.setScene(scene);
 
-            bKeyAnswer = currentCode.setKey(stage, fxmlLoader);
+            //bKeyAnswer = currentCode.setKey(stage, fxmlLoader);
             updateKeyCheckbox();
         } catch (IOException e) {
             e.printStackTrace();
@@ -149,8 +149,8 @@ public class Main_Controller implements Initializable {
 
     // апдейт текста (поле с описанием выбранного шифра)
     private void updateTextArea() {
-        if (currentCode != null)
-            code_description.setText(currentCode.getCodeDescription());
+        //if (currentCode != null)
+            //code_description.setText(currentCode.getCodeDescription());
     }
 
     // апдейт чекбокса выбора языков

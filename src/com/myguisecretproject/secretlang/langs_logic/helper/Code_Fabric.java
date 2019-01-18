@@ -16,10 +16,10 @@ public class Code_Fabric {
         if (decode) {
             switch (c) {
                 case CAESAR_CODE:
-                    code = new Caesar_code();
+                    code = new Caesar_code(null);
                     break;
                 case SIMPLE_CODE:
-                    code = new Simple_code();
+                    code = new Simple_code(null);
                     break;
                 case EXAMPLE_CODE:
                     break;
@@ -27,10 +27,10 @@ public class Code_Fabric {
         } else {
             switch (c) {
                 case CAESAR_CODE:
-                    code = new Caesar_decode();
+                    code = new Caesar_decode(null);
                     break;
                 case SIMPLE_CODE:
-                    code = new Simple_decode();
+                    code = new Simple_decode(null);
                     break;
                 case EXAMPLE_CODE:
                     break;
